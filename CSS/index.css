@@ -49,3 +49,113 @@
   font-size: 0.75rem;
   font-style: italic;
 }
+#top-donors {
+  margin: 50px 10px 25px;
+  font-weight: 600;
+}
+.top-donor-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.donor-card {
+  width: 45%;
+  margin: 0 5px;
+}
+.donor-card img {
+  width: 100%;
+}
+.donor-card h4 {
+  color: #3498db;
+  margin: 5px 0;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.donor-card h5 {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+.donor-card p {
+  color: gray;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+.top-donors-button {
+  background: white;
+  border: 1px solid #3498db;
+  width: 90%;
+  text-align: center;
+  margin: 25px auto;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.top-donors-button a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.top-donors-button:hover {
+  cursor: pointer;
+  background: #3498db;
+  border: 1px solid white;
+}
+.top-donors-button:hover a {
+  color: white;
+  font-weight: bold;
+}
+.start-today {
+  margin: 10px 0;
+  background: rgba(242, 240, 240, 0.85);
+}
+.start-today h2 {
+  padding: 25px 0 10px;
+  font-size: 1.5rem;
+}
+.start-today p {
+  padding: 0 0 25px;
+  line-height: 1.5;
+}
+.user-card {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.user-card img {
+  width: 25%;
+  height: 25%;
+}
+.user-card h3 {
+  margin: 15px;
+}
+.user-card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px gray, 0px -15px 10px -15px gray;
+}
+.student-stories {
+  margin-top: 0;
+  padding-top: 0;
+}
+.student-stories img {
+  width: 100%;
+}
+.student-stories h5 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.student-stories h3 {
+  padding: 5px 0;
+  margin: 5px 0;
+  font-size: 1.75rem;
+}
+.student-stories p {
+  font-style: italic;
+  line-height: 1.5;
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 1.05rem;
+}

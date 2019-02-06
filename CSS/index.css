@@ -1,9 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
-  width: 100%;
-  background-color: #f2f0f0;
+  width: 105%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+.navbar h1 {
+  color: white;
+}
+.navbar a i {
+  color: white;
+}
+.nav-colored {
+  background-color: white;
 }
 #nav-item1 {
   order: -1;
@@ -30,7 +48,7 @@
 }
 .sign-up-button {
   background: #3498db;
-  width: 300px;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
   border-radius: 10px;
@@ -41,6 +59,7 @@
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
+  letter-spacing: 0.125em;
 }
 .sign-up-button:hover {
   cursor: pointer;
@@ -51,12 +70,18 @@
 }
 #top-donors {
   margin: 50px 10px 25px;
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 1.75rem;
 }
 .top-donor-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .top-donor-cards {
+    justify-content: space-between;
+  }
 }
 .donor-card {
   width: 45%;
@@ -83,6 +108,16 @@
   margin: 5px 0;
   padding: 5px 0;
 }
+@media (min-width: 768px) {
+  .donor-card {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) {
+  .last-donor-card {
+    display: none;
+  }
+}
 .top-donors-button {
   background: white;
   border: 1px solid #3498db;
@@ -106,6 +141,11 @@
   color: white;
   font-weight: bold;
 }
+@media (min-width: 768px) {
+  .top-donors-button {
+    width: 45%;
+  }
+}
 .start-today {
   margin: 10px 0;
   background: rgba(242, 240, 240, 0.85);
@@ -118,6 +158,9 @@
   padding: 0 0 25px;
   line-height: 1.5;
 }
+.start-today a {
+  text-decoration: none;
+}
 .user-card {
   margin: 20px 0;
   display: flex;
@@ -125,8 +168,8 @@
   background: white;
 }
 .user-card img {
-  width: 25%;
-  height: 25%;
+  max-width: 96px;
+  max-height: 96px;
 }
 .user-card h3 {
   margin: 15px;
@@ -136,11 +179,13 @@
   box-shadow: 0 8px 6px -6px gray, 0px -15px 10px -15px gray;
 }
 .student-stories {
-  margin-top: 0;
-  padding-top: 0;
+  margin: 0;
+  padding: 0;
 }
 .student-stories img {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .student-stories h5 {
   text-transform: uppercase;
@@ -158,4 +203,46 @@
   margin-top: 5px;
   padding-top: 5px;
   font-size: 1.05rem;
+}
+.leader {
+  background: rgba(242, 240, 240, 0.85);
+  margin-top: 20px;
+}
+.leader h2 {
+  text-align: center;
+  padding: 25px 10px;
+}
+.leader ul {
+  padding-left: 10px;
+}
+.leader ul li {
+  list-style-type: none;
+  margin: 25px 10px;
+  font-weight: bold;
+  font-size: 1.075rem;
+}
+.leader i {
+  margin-right: 10px;
+  width: 45px;
+}
+.leader-sign-up {
+  background: #3498db;
+  width: 40%;
+  text-align: center;
+  margin: 25px auto;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+.leader-sign-up a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+}
+.leader-sign-up:hover {
+  cursor: pointer;
+}
+footer i {
+  margin: 5px;
 }

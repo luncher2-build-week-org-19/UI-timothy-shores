@@ -351,6 +351,12 @@ body {
   padding-top: 5px;
   font-size: 1.05rem;
 }
+@media (min-width: 960px) {
+  .glider-contain {
+    max-width: 1100px;
+    margin: 50px auto;
+  }
+}
 .leader {
   background: rgba(242, 240, 240, 0.85);
   margin-top: 20px;

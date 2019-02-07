@@ -318,6 +318,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.student-stories .student-story {
+  margin: 20px;
+}
 @media (min-width: 960px) {
   .student-stories {
     max-width: 950px;
@@ -355,8 +358,23 @@ body {
   font-size: 1.05rem;
 }
 .swiper-container {
-  width: 1100px;
-  height: 550px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
+@media (min-width: 960px) {
+  .swiper-container {
+    width: 95%;
+  }
+}
+@media (min-width: 1100px) {
+  .swiper-container {
+    width: 1100px;
+    height: 550px;
+  }
 }
 .leader {
   background: rgba(242, 240, 240, 0.85);
@@ -393,19 +411,18 @@ body {
     width: 45%;
     margin-left: 20px;
   }
-}
-@media (min-width: 768px) {
-  .leader ul li {
-    width: 30%;
-    margin-left: 20px;
+  .leader ul li:last-child {
+    display: none;
   }
 }
-.leader ul li:nth-last-child(2) {
-  display: none;
-  margin: 0;
-}
-.leader ul li:last-child {
-  display: none;
+@media (min-width: 960px) {
+  .leader ul li {
+    width: 30%;
+  }
+  .leader ul li:nth-last-child(2) {
+    display: none;
+    margin: 0;
+  }
 }
 .leader i {
   margin-right: 10px;

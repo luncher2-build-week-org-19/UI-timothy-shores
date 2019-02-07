@@ -44,3 +44,13 @@ var mySwiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 })
+
+carouselImages = {
+    1: "assets/donor.jpg",
+    2: "assets/admin.jpg",
+    3: "assets/students-parents.jpg"
+}
+
+const userCardsHTML = document.getElementsByClassName("user-card");
+const userCards = [...userCardsHTML];
+console.log(userCards);

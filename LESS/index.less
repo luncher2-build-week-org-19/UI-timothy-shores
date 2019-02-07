@@ -2,33 +2,126 @@
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
+body {
+    margin: 0;
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
     width: 105%;
-    // background-color: rgb(242, 240, 240);
     position: fixed;
     margin: 0;
     padding: 0;
+
     h1 {
         color: white;
     }
+
     a i {
         color: white;
     }
+
+    @media (max-width: 960px) {
+        justify-content: space-evenly;
+    }
+
+    #nav-item1A {
+        display: none;
+
+        @media (min-width: 960px) {
+            display: inline;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    #nav-item2 {
+        @media (min-width: 960px) {
+            display: none;
+        }
+    }
+
+    #nav-item3 {
+        display: none;
+
+        @media (min-width: 960px) {
+            display: inline;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    #nav-item4 {
+        display: none;
+
+        @media (min-width: 960px) {
+            display: inline;
+            color: white;
+            text-decoration: none;
+
+        }
+    }
+
 }
 
-.nav-colored {
-    background-color: white;
+.mobile-top {
+    @media (min-width: 960px) {
+        display: none;
+    }
+}
+
+.desktop-top {
+    @media (max-width: 960px) {
+        display: none;
+    }
+
+    height: 600px;
+    background: url("../assets/neonbrand-426918-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .sign-up-button {
+        width: 150px;
+        text-align: center;
+        margin: 40px 0 140px;
+        margin-left: 25px;
+    }
+
+    h2,
+    p {
+        color: white;
+        margin-left: 25px;
+
+    }
+
+    .header-caption {
+        padding: 5px 0;
+        text-align: left;
+        line-height: 1.5;
+        background: none;
+    }
+
+    .top-text {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .header-caption {
+        width: 1100px;
+        margin: 0 auto;
+    }
 }
 
 #nav-item1 {
+    order: -1;
+}
+
+#nav-item1A {
     order: -1;
 }
 
@@ -46,7 +139,7 @@
 .top-text {
     padding: 0 10px;
 }
-    
+
 .header-text {
     line-height: 1.5;
     font-size: 1.75rem;
@@ -64,16 +157,18 @@
     margin: 0 auto;
     border-radius: 10px;
     padding: 15px 0;
+
     a {
-    color: white;
+        color: white;
         text-decoration: none;
         font-size: 1.25rem;
         font-weight: 600;
         letter-spacing: 0.125em;
     }
-  &:hover {
-    cursor: pointer;
-  }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .terms-conditions {
@@ -85,23 +180,38 @@
     margin: 50px 10px 25px;
     font-weight: bold;
     font-size: 1.75rem;
+
+    @media (min-width: 960px) {
+        max-width: 1100px;
+        margin: 50px auto;
+    }
 }
 
 .top-donor-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     @media (min-width: 768px) {
         justify-content: space-between;
+
     }
+
+    @media (min-width: 960px) {
+        max-width: 1100px;
+        margin: 50px auto;
+    }
+
 }
 
 .donor-card {
     width: 45%;
     margin: 0 5px;
+
     img {
         width: 100%;
     }
+
     h4 {
         color: #3498db;
         margin: 5px 0;
@@ -110,17 +220,20 @@
         font-size: 0.9rem;
 
     }
+
     h5 {
         font-size: 1.1rem;
         margin: 5px 0;
         padding: 5px 0;
     }
+
     p {
         color: gray;
         font-size: 0.9rem;
         margin: 5px 0;
         padding: 5px 0;
     }
+
     @media (min-width: 768px) {
         width: 30%;
     }
@@ -140,20 +253,24 @@
     margin: 25px auto;
     border-radius: 10px;
     padding: 10px 0;
+
     a {
-    color: #3498db;
+        color: #3498db;
         text-decoration: none;
         font-size: 1.1rem;
     }
-  &:hover {
-    cursor: pointer;
-    background: #3498db;
-    border: 1px solid white;
-    a {
-        color: white;
-        font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+        background: #3498db;
+        border: 1px solid white;
+
+        a {
+            color: white;
+            font-weight: bold;
+        }
     }
-  }
+
     @media (min-width: 768px) {
         width: 45%;
     }
@@ -162,16 +279,39 @@
 .start-today {
     margin: 10px 0;
     background: rgba(242, 240, 240, 0.85);
+
     h2 {
         padding: 25px 0 10px;
         font-size: 1.5rem;
+        margin: 25px auto;
+
+        @media (min-width: 960px) {
+            max-width: 1100px;
+            margin: 50px auto 10px;
+        }
     }
+
     p {
         padding: 0 0 25px;
-    line-height: 1.5;
+        line-height: 1.5;
+
+        @media (min-width: 960px) {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
     }
+
     a {
         text-decoration: none;
+    }
+}
+
+.user-cards {
+    @media (min-width: 960px) {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -180,18 +320,33 @@
     display: flex;
     align-items: center;
     background: white;
-    img {
-        // width: 25%;
-        // height: 25%;
-        max-width: 96px;
-        max-height: 96px;
-    }
+
     h3 {
         margin: 15px;
     }
+
     &:hover {
         cursor: pointer;
-        box-shadow: 0 8px 6px -6px gray, 0px -15px 10px -15px gray;    
+        box-shadow: 0 8px 6px -6px gray, 0px -15px 10px -15px gray;
+    }
+
+    @media (min-width: 960px) {
+        max-width: 1100px;
+        margin: 50px auto;
+        display: inline-flex;
+        flex-direction: column;
+        width: 25%;
+        justify-content: flex-end;
+    }
+
+    img {
+        max-width: 96px;
+        max-height: 96px;
+
+        @media (min-width: 960px) {
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
 }
 
@@ -199,21 +354,42 @@
 .student-stories {
     margin: 0;
     padding: 0;
+
     img {
         width: 100%;
         margin: 0;
         padding: 0;
     }
+
+    @media (min-width: 960px) {
+        max-width: 1100px;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+
+        .student-story {
+            order: -1;
+            width: 30%;
+        }
+
+        img {
+            width: 70%;
+            height: 70%;
+        }
+    }
+
     h5 {
         text-transform: uppercase;
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    h3{
+
+    h3 {
         padding: 5px 0;
         margin: 5px 0;
         font-size: 1.75rem;
     }
+
     p {
         font-style: italic;
         line-height: 1.5;
@@ -226,32 +402,72 @@
 .leader {
     background: rgba(242, 240, 240, 0.85);
     margin-top: 20px;
+
     h2 {
         text-align: center;
         padding: 25px 10px;
     }
+
     ul {
         padding-left: 10px;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        @media (min-width: 960px) {
+            max-width: 1100px;
+            margin: 50px auto;
+        }
     }
+
     ul li {
         list-style-type: none;
         margin: 25px 10px;
         font-weight: bold;
         font-size: 1.075rem;
+
+        @media (min-width: 768px) {
+            width: 45%;
+            margin-left: 20px;
+        }
+
+        @media (min-width: 768px) {
+            width: 30%;
+            margin-left: 20px;
+        }
+
+        &:nth-last-child(2) {
+            display: none;
+            margin: 0;
+        }
+
+        &:last-child {
+            display: none;
+        }
     }
+
     i {
         margin-right: 10px;
         width: 45px;
     }
+
+
 }
 
 .leader-sign-up {
     background: #3498db;
-    width: 40%;
+    width: 25%;
     text-align: center;
     margin: 25px auto;
     border-radius: 10px;
     padding: 10px 0;
+    margin-top: 50px;
+    position: relative;
+    bottom: 25px;
+
     a {
         color: white;
         text-decoration: none;
@@ -259,11 +475,30 @@
         font-weight: 600;
         letter-spacing: 0.125em;
     }
-  &:hover {
-    cursor: pointer;
-  }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (min-width: 960px) {
+        width: 15%;
+        margin-top: 100px;
+        position: relative;
+        bottom: 50px;
+    }
 }
 
-footer i {
-    margin: 5px;
+footer {
+    p {
+        font-style: italic;
+    }
+
+    i {
+        margin: 5px;
+    }
+
+    @media (min-width: 960px) {
+        max-width: 1100px;
+        margin: 50px auto;
+    }
 }

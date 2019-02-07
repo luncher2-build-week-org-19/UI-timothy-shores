@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link href="CSS/glide.core.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <link href="css/index.css" rel="stylesheet">
     <title>Luncher2</title>
 </head>
@@ -106,40 +107,62 @@
             <br>
     </div>
 
-    <div class="student-stories">
-        <!-- Note: Be sure to use 3:2 images for this section -->
-        <img src="assets/student1.jpg" alt="Child sitting at a table with pencil">
-        <div class="student-story">
-            <h5>Luncher2 Student Stories</h5>
-            <h3>Meet Emma</h3>
-            <p>I used to be very sad that my parents could not afford to pack a lunch for me to school. Since Luncher2
-                I
-                have been able to eat lunch at school.</p>
+    <!-- Slider container for student stories -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="student-stories">
+                    <!-- Note: Be sure to use 3:2 images for this section -->
+                    <img src="assets/student1.jpg" alt="Child sitting at a table with pencil">
+                    <div class="student-story">
+                        <h5>Luncher2 Student Stories</h5>
+                        <h3>Meet Emma</h3>
+                        <p>I used to be very sad that my parents could not afford to pack a lunch for me to school.
+                            Since Luncher2
+                            I
+                            have been able to eat lunch at school.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="student-stories">
+                    <!-- Note: Be sure to use 3:2 images for this section -->
+                    <img src="assets/student2.jpg" alt="Child sitting at a table with pencil">
+                    <div class="student-story">
+                        <h5>Luncher2 Student Stories</h5>
+                        <h3>Meet Marquis</h3>
+                        <p>I used to be very sad that my parents could not afford to pack a lunch for me to school.
+                            Since Luncher2
+                            I
+                            have been able to eat lunch at school.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="student-stories">
+                    <!-- Note: Be sure to use 3:2 images for this section -->
+                    <img src="assets/student3.jpg" alt="Child sitting at a table with pencil">
+                    <div class="student-story">
+                        <h5>Luncher2 Student Stories</h5>
+                        <h3>Meet Anaya</h3>
+                        <p>I used to be very sad that my parents could not afford to pack a lunch for me to school.
+                            Since Luncher2
+                            I
+                            have been able to eat lunch at school.</p>
+                    </div>
+                </div>
+            </div>
+            ...
         </div>
-    </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-    <div class="glider-contain multiple">
-        <h1>Testimonials</h1>
-        <button class="button-prev">
-            <i class="fa fa-chevron-left"></i>
-        </button>
-        <div class="glider">
-            <figure>
-                <blockquote>"Sample blockquote 1"</blockquote>
-                <figcaption>Person 1</figcaption>
-                <blockquote>"Sample blockquote 2"</blockquote>
-                <figcaption>Person 2</figcaption>
-                <blockquote>"Sample blockquote 3"</blockquote>
-                <figcaption>Person 3</figcaption>
-                <blockquote>"Sample blockquote 4"</blockquote>
-                <figcaption>Person 4</figcaption>
-                <blockquote>"Sample blockquote 5"</blockquote>
-                <figcaption>Person 5</figcaption>
-            </figure>
-        </div>
-        <button class="button-next">
-            <i class="fa fa-chevron-right"></i>
-        </button>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
     </div>
 
     <div class="leader">
@@ -169,7 +192,8 @@
         </div>
     </footer>
 
-    <script src="glide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="script.js"></script>
 </body>
 

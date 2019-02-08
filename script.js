@@ -45,12 +45,16 @@ var mySwiper = new Swiper('.swiper-container', {
     },
 })
 
+// JavaScript Fundamentals requirement to create an object
 carouselImages = {
-    1: "assets/donor.jpg",
-    2: "assets/admin.jpg",
-    3: "assets/students-parents.jpg"
+    donor: "assets/donor.jpg",
+    admin: "assets/admin.jpg",
+    family: "assets/students-parents.jpg"
 }
 
 const userCardsHTML = document.getElementsByClassName("user-card");
-const userCards = [...userCardsHTML];
-console.log(userCards);
+const userCards = [...userCardsHTML]; //Creates an Array using the spread operator
+
+userCards.forEach(function (card, index) {
+    userCards[index].children[0].src = Object.values(carouselImages)[index];
+});
